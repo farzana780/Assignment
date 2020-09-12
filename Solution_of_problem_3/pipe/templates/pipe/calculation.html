@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculation</title>
+    <style>
+        th, td {
+                padding: 5px;
+                }
+        th {
+            text-align: left;
+           }
+    </style>
+</head>
+<body>
+<table style="width:30%">
+    <h2>Calculation Details</h2>
+ <tr style="color:red">
+    <th>Description</th>
+    <th>Units</th>
+    <th>Values</th>
+  </tr>
+    <tr>
+        <td>Pipe_Inside_Radius</td>
+        <td>in</td>
+        <td> {{Pipe_Inside_Radius}}</td>
+    </tr>
+    <tr>
+        <td>Pipe_Outside_Radius</td>
+        <td>in</td>
+        <td> {{Pipe_Outside_Radius}}</td>
+    </tr>
+    <tr>
+        <td>Outer_Radius_of_Coating</td>
+        <td>in</td>
+        <td>{{Outer_Radius_of_Coating}}</td>
+    </tr>
+    <tr style="color: green">
+        <td><b>Total_Pipeline_Outside_Diameter</b></td>
+        <td></td>
+        <td><b>{{Total_Pipeline_Outside_Diameter}}</b></td>
+    </tr>
+</table>
+
+<h2>Calculate Dry Unit Weight</h2>
+<table style="width:30%">
+    <tr style="color:red">
+        <th>Description</th>
+        <th>Installation Empty</th>
+    </tr>
+    <tr>
+        <td> Pipe_Weight_per_Unit_Length</td>
+        <td>{{Pipe_Weight_per_Unit_Length}}</td>
+    </tr>
+    <tr>
+        <td>Coating_1_Wt_per_Unit_Length_in_Air</td>
+        <td>{{Coating_1_Wt_per_Unit_Length_in_Air}}</td>
+    </tr>
+    <tr>
+        <td>Contents_Wt_Per_Unit_Length_in_Air</td>
+        <td>{{Contents_Wt_Per_Unit_Length_in_Air}}</td>
+    </tr>
+    <tr style="color:green">
+        <td><b>Total_Weight_per_Unit_Length_in_Air</b></td>
+        <td><b>{{Total_Weight_per_Unit_Length_in_Air}}</b></td>
+    </tr>
+    <tr style="color: blue">
+        <td>Buoyant_Force_per_Unit_Length</td>
+        <td>{{Buoyant_Force_per_Unit_Length}}</td>
+    </tr>
+</table>
+
+<h2>Summary of Submerged Weight</h2>
+<table style="width:30%">
+    <tr style="color:red">
+        <th>Description</th>
+        <th>Submerged Weight/Unit Length (lb/ft)</th>
+        <th>Subm. Specific Gravity with respect to S.W.</th>
+    </tr>
+    <tr>
+        <td style="color:blue">Installation Empty</td>
+        <td>{{Submerged_Weight_per_Unit_Length}}</td>
+        <td>{{Subm_Specific_Gravity_with_respect_to_SW}}</td>
+    </tr>
+</table>
+</body>
+</html>
